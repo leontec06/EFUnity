@@ -38,8 +38,18 @@ public class NewBehaviourScript : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter(Collision collision)
+    void OnCollisionEnter(Collision collision)
     {
-        IsOnGround=true;
+        if (collision.gameObject.tag == "Enemy")
+        {
+            Destroy(collision.gameObject);
+        }
+        if (collision.gameObject.tag == "Ground")
+        {
+            IsOnGround=true;
+        }
+        
     }
+
 }
+
