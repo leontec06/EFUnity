@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class NewBehaviourScript : MonoBehaviour
 {
-    public float walkspeed = 1.5f;  
+    public float walkspeed = 4f;  
     public float jumpforce = 5; 
     public bool IsOnGround=true;
     private float horizontalInput;
@@ -29,7 +29,7 @@ public class NewBehaviourScript : MonoBehaviour
         forwardInput = Input.GetAxis("Vertical");
 
         transform.Translate(Vector3.right*Time.deltaTime*horizontalInput*walkspeed);
-        transform.Translate(Vector3.forward*Time.deltaTime*forwardInput*walkspeed);
+        transform.Translate(Vector3.forward*Time.deltaTime*walkspeed);
 
         if (Input.GetKeyDown(KeyCode.Space)&&IsOnGround)
         {

@@ -17,7 +17,8 @@ public class lukaskeller : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.K))
         {
-            Instantiate(cubespawn,transform.position,Quaternion.identity);
+            //Instantiate(cubespawn,transform.position,Quaternion.identity);
+            Instantiate(cubespawn, new Vector3(10f,0f,0f),Quaternion.identity);
 
         }
     }
