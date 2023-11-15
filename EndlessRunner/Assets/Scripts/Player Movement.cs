@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor.PackageManager;
 using UnityEngine;
 
 public class NewBehaviourScript : MonoBehaviour
@@ -49,6 +50,14 @@ public class NewBehaviourScript : MonoBehaviour
             IsOnGround=true;
         }
         
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag=="SpawnTrigger")
+        {
+            print("LoL");
+        }
     }
 
 }
