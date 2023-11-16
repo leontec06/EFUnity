@@ -9,8 +9,7 @@ public class NewBehaviourScript : MonoBehaviour
     public float walkspeed = 4f;  
     public float jumpforce = 5; 
     public bool IsOnGround=true;
-    private float horizontalInput;
-    private float forwardInput;
+    private float lanewidth=5;
     private Rigidbody playerRB;
 
 
@@ -24,12 +23,21 @@ public class NewBehaviourScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        horizontalInput = Input.GetAxis("Horizontal");
+         transform.Translate(Vector3.forward*Time.deltaTime*walkspeed);
+        //horizontalInput = Input.GetAxis("Horizontal");
 
-        forwardInput = Input.GetAxis("Vertical");
+        //forwardInput = Input.GetAxis("Vertical");
 
-        transform.Translate(Vector3.right*Time.deltaTime*horizontalInput*walkspeed);
-        transform.Translate(Vector3.forward*Time.deltaTime*walkspeed);
+        //transform.Translate(Vector3.right*Time.deltaTime*horizontalInput*walkspeed);
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            transform.Translate(Vector3.left*lanewidth);
+        }
+       
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            transform.Translate(Vector3.right*lanewidth);
+        }
 
         if (Input.GetKeyDown(KeyCode.Space)&&IsOnGround)
         {
@@ -52,13 +60,13 @@ public class NewBehaviourScript : MonoBehaviour
         
     }
 
-    void OnTriggerEnter(Collider other)
+    /*void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag=="SpawnTrigger")
         {
-            print("LoL");
+            
         }
-    }
+    }*/
 
 }
 
