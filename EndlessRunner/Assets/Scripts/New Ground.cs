@@ -29,7 +29,7 @@ public class NewGround : MonoBehaviour
             
             if (other.gameObject.tag == "Player")
             {
-                Instantiate(newGround, new Vector3(0f,0f,60f)*levelnumber, Quaternion.identity);
+                Instantiate(newGround, new Vector3(0f,0f,60f*levelnumber+120), Quaternion.identity);
 
 
                 
