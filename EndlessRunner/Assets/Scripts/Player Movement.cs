@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEditor.PackageManager;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class NewBehaviourScript : MonoBehaviour
 {
@@ -67,6 +68,10 @@ public class NewBehaviourScript : MonoBehaviour
         {
             IsOnGround=true;
             
+        }
+        if (collision.gameObject.tag =="Obstacle")
+        {
+            SceneManager.LoadScene("Game Over");
         }
         
     }
