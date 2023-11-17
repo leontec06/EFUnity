@@ -33,7 +33,7 @@ public class NewGround : MonoBehaviour
                 Instantiate(newGround, new Vector3(0f,0f,60f*levelnumber+120), Quaternion.identity);                
                 transform.Translate(new Vector3(0f,0f,60f));
 
-                Instantiate(water, new Vector3(0f,-10f,60f*levelnumber+120), Quaternion.identity); 
+                Instantiate(water, new Vector3(0f,-23f,60f*levelnumber+120), Quaternion.identity); 
                 
                 levelnumber+=1;
                 print(levelnumber);
