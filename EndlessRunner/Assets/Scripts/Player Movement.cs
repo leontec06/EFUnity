@@ -5,7 +5,7 @@ using UnityEditor.PackageManager;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class NewBehaviourScript : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
     public float walkspeed = 4f;  
     public float jumpforce = 5; 
