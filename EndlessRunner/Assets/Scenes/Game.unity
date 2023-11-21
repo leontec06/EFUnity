@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.381
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.10773649, g: 0.10965095, b: 0.109624095, a: 0.381}
+  m_IndirectSpecularColor: {r: 0.107736476, g: 0.10965098, b: 0.109624065, a: 0.381}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -252,7 +252,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walkspeed: 25
-  jumpforce: 8
+  jumpforce: 4.5
   IsOnGround: 1
 --- !u!54 &374838770
 Rigidbody:
@@ -262,7 +262,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 374838766}
   serializedVersion: 4
-  m_Mass: 1.2
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -1133,8 +1133,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1639511173}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.0042427313, y: -0.7070939, z: 0.0042427727, w: 0.70709425}
-  m_LocalPosition: {x: 15.769966, y: -48.357018, z: 51.95191}
+  m_LocalRotation: {x: 0.22430235, y: 0.0692219, z: 0.015979571, w: -0.97192675}
+  m_LocalPosition: {x: 2.052046, y: -54.995567, z: 39.794685}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1428,8 +1428,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2024769424}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.0042427313, y: -0.7070939, z: 0.0042427727, w: 0.70709425}
-  m_LocalPosition: {x: 15.769966, y: -48.357018, z: 51.95191}
+  m_LocalRotation: {x: 0.22430235, y: 0.0692219, z: 0.015979571, w: -0.97192675}
+  m_LocalPosition: {x: 2.052046, y: -54.995567, z: 39.794685}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1586,7 +1586,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6580870, guid: 6d63b78216191644fac480e8659cee53, type: 3}
       propertyPath: m_Center.y
-      value: 0.09
+      value: -0.15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
