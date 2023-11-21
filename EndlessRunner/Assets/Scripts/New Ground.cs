@@ -36,7 +36,7 @@ public class NewGround : MonoBehaviour
                 Instantiate(water, new Vector3(0f,-23f,60f*levelnumber+120), Quaternion.identity); 
                 
                 levelnumber+=1;
-                print(levelnumber);
+                //print(levelnumber);
             }
         }
 }   

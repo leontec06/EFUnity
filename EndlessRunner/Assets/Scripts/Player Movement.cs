@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
+ 
     public float walkspeed = 4f;  
     public float jumpforce = 5; 
     public bool IsOnGround=true;
@@ -56,14 +57,16 @@ public class PlayerMovement : MonoBehaviour
             playerRB.AddForce(Vector3.up*jumpforce,ForceMode.Impulse);
             IsOnGround=false;
         }
+
+        //if (animPlayer.GetCurrentAnimatorStateInfo(0).IsName("exitscreen")){
+          //  SceneManager.LoadScene("Game Over");
+        //}
+
     }
 
-    void OnCollisionEnter(Collision collision)
+    async void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Enemy")
-        {
-            Destroy(collision.gameObject);
-        }
+        
         if (collision.gameObject.tag == "Ground")
         {
             IsOnGround=true;
@@ -71,18 +74,22 @@ public class PlayerMovement : MonoBehaviour
         }
         if (collision.gameObject.tag =="Obstacle")
         {
-            SceneManager.LoadScene("Game Over");
+            walkspeed=0f;
+            GameObject.Find("Main Camera").GetComponent<CameraMove>().enabled=false;
+            animPlayer.SetTrigger("die");
+            
+            
+            //WaitNarration();
+
+            
+
+
         }
         
     }
 
-    /*void OnTriggerEnter(Collider other)
-    {
-        if(other.gameObject.tag=="SpawnTrigger")
-        {
-            
-        }
-    }*/
+
+    
 
 }
 
