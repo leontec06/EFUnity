@@ -5,7 +5,6 @@ using UnityEngine;
 public class correctPosition : MonoBehaviour
 {
     // Start is called before the first frame update
-    int lanewidth=5;
     Animator animPlayer;
 
     void Start()
