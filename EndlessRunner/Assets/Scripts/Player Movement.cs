@@ -13,8 +13,9 @@ public class PlayerMovement : MonoBehaviour
     public bool IsOnGround=true;
     //private float lanewidth=5;
     private Rigidbody playerRB;
-
     Animator animPlayer;
+
+    
 
 
     // Start is called before the first frame update
@@ -22,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
     {
         playerRB=GetComponent<Rigidbody>();
         animPlayer=GetComponent<Animator>();   
+        
     }
 
     // Update is called once per frame
@@ -56,6 +58,8 @@ public class PlayerMovement : MonoBehaviour
             animPlayer.SetTrigger("jump");
             playerRB.AddForce(Vector3.up*jumpforce,ForceMode.Impulse);
             IsOnGround=false;
+           
+            
         }
 
         //if (animPlayer.GetCurrentAnimatorStateInfo(0).IsName("exitscreen")){
