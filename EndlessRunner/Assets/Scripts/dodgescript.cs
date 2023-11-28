@@ -2,13 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class jumpsound : MonoBehaviour
+public class NewBehaviourScript : MonoBehaviour
 {
     // Start is called before the first frame update
+AudioSource aud;
 
-    AudioSource aud;
-
-    
 
     void Start()
     {
@@ -18,12 +16,8 @@ public class jumpsound : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space)){
+        if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.LeftArrow)){
             aud.Play();
         }
-
-
-        
-        
     }
 }
