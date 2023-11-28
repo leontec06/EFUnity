@@ -228,7 +228,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6e36b8825514f948834a6a6acc093ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 25
+  moveSpeed: 18
 --- !u!1 &294467002 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100006, guid: b544816461f324e56a39767fdeb5b114, type: 3}
@@ -251,7 +251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eb0961612f9cf0419ad3a1f9a7fe644, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkspeed: 25
+  walkspeed: 18
   jumpforce: 4.5
   IsOnGround: 1
 --- !u!54 &374838770
@@ -1429,8 +1429,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1639511173}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.29288298, y: 0.18716164, z: 0.058566596, w: 0.9358205}
-  m_LocalPosition: {x: -37.38644, y: -68.35919, z: -13.655516}
+  m_LocalRotation: {x: -0.34288904, y: 0.11596444, z: 0.042692415, w: 0.9312125}
+  m_LocalPosition: {x: -2.9623632, y: -55.470287, z: -31.129112}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1724,8 +1724,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2024769424}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.29288298, y: 0.18716164, z: 0.058566596, w: 0.9358205}
-  m_LocalPosition: {x: -37.38644, y: -68.35919, z: -13.655516}
+  m_LocalRotation: {x: -0.34288904, y: 0.11596444, z: 0.042692415, w: 0.9312125}
+  m_LocalPosition: {x: -2.9623632, y: -55.470287, z: -31.129112}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
