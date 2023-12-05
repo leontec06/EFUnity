@@ -16,7 +16,7 @@ AudioSource aud;
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.LeftArrow)){
+        if (Input.GetKeyDown(KeyCode.RightArrow) && GameObject.Find("Player").GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("run") &&GameObject.Find("Player").GetComponent<Transform>().position.x<4.5|| Input.GetKeyDown(KeyCode.LeftArrow)&& GameObject.Find("Player").GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("run")&&GameObject.Find("Player").GetComponent<Transform>().position.x>-4.5){
             aud.Play();
         }
     }
