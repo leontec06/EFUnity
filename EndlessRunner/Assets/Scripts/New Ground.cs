@@ -12,6 +12,7 @@ public class NewGround : MonoBehaviour
     public GameObject Obstacle1;
     public GameObject Obstacle2;
     public GameObject Obstacle3;
+    public GameObject Coin;
     private int levelnumber=1;
     // Start is called before the first frame update
 
@@ -39,6 +40,11 @@ public class NewGround : MonoBehaviour
                 if (randomNumber==1){Instantiate(Obstacle1, new Vector3(0f,0f,60f*levelnumber+120), Quaternion.identity);}
                 if (randomNumber==2){Instantiate(Obstacle2, new Vector3(0f,0f,60f*levelnumber+120), Quaternion.identity);}
                 if (randomNumber==3){Instantiate(Obstacle3, new Vector3(0f,0f,60f*levelnumber+120), Quaternion.identity);}
+
+                float randomNumber1 = Random.Range(0, 2);
+                float randomNumber2 = Random.Range(-1, 2);
+            
+                Instantiate(Coin, new Vector3(randomNumber1*5f, randomNumber2*5f, 60f*levelnumber+90),Quaternion.identity);
 
                 Instantiate(newGround, new Vector3(0f,0f,60f*levelnumber+120), Quaternion.identity);                
                 transform.Translate(new Vector3(0f,0f,60f));
