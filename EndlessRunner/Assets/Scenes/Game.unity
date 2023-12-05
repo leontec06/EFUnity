@@ -228,7 +228,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6e36b8825514f948834a6a6acc093ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 18
+  moveSpeed: 25
 --- !u!1 &294467002 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100006, guid: b544816461f324e56a39767fdeb5b114, type: 3}
@@ -251,7 +251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eb0961612f9cf0419ad3a1f9a7fe644, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkspeed: 18
+  walkspeed: 25
   jumpforce: 4.5
   IsOnGround: 1
 --- !u!54 &374838770
@@ -1429,8 +1429,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1639511173}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.34288904, y: 0.11596444, z: 0.042692415, w: 0.9312125}
-  m_LocalPosition: {x: -2.9623632, y: -55.470287, z: -31.129112}
+  m_LocalRotation: {x: 0.06565559, y: 0.24644868, z: 0.01674982, w: -0.9667843}
+  m_LocalPosition: {x: 29.339281, y: -54.22309, z: -53.80767}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1724,8 +1724,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2024769424}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.34288904, y: 0.11596444, z: 0.042692415, w: 0.9312125}
-  m_LocalPosition: {x: -2.9623632, y: -55.470287, z: -31.129112}
+  m_LocalRotation: {x: 0.06565559, y: 0.24644868, z: 0.01674982, w: -0.9667843}
+  m_LocalPosition: {x: 29.339281, y: -54.22309, z: -53.80767}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1804,6 +1804,99 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 890148445}
   m_SourcePrefab: {fileID: 100100000, guid: aced7dcb98489944cbb9db9a27d5122a, type: 3}
+--- !u!1 &2147260614
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2147260617}
+  - component: {fileID: 2147260616}
+  - component: {fileID: 2147260615}
+  m_Layer: 0
+  m_Name: Water4Advanced (1)ReflectionPreview Camera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!45 &2147260615
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2147260614}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
+--- !u!20 &2147260616
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2147260614}
+  m_Enabled: 0
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 1}
+  m_projectionMatrixMode: 0
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967279
+  m_RenderingPath: 1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &2147260617
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2147260614}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.42685738, y: 0.031994104, z: 0.015107302, w: 0.90362656}
+  m_LocalPosition: {x: -23.078411, y: -302.74396, z: -26.76477}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1626787535261855568
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1882,3 +1975,4 @@ SceneRoots:
   - {fileID: 1740423891}
   - {fileID: 2024769426}
   - {fileID: 1827315697}
+  - {fileID: 2147260617}
