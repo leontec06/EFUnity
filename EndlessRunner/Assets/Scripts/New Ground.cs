@@ -41,10 +41,14 @@ public class NewGround : MonoBehaviour
                 if (randomNumber==2){Instantiate(Obstacle2, new Vector3(0f,0f,60f*levelnumber+120), Quaternion.identity);}
                 if (randomNumber==3){Instantiate(Obstacle3, new Vector3(0f,0f,60f*levelnumber+120), Quaternion.identity);}
 
-                float randomNumber1 = Random.Range(0, 2);
+                float randomNumber1 = Random.Range(-1, 2);
                 float randomNumber2 = Random.Range(-1, 2);
             
-                Instantiate(Coin, new Vector3(randomNumber1*5f, randomNumber2*5f, 60f*levelnumber+90),Quaternion.identity);
+                //Instantiate(Coin, new Vector3(randomNumber1*5f, randomNumber2*5f, 60f*levelnumber+90),Quaternion.identity);
+                //Instantiate(Coin, new Vector3(0f, 3f, 60f*levelnumber+90),Quaternion.identity);
+                Instantiate(Coin, new Vector3(randomNumber1*5f, 3f, 60f * levelnumber + 90), Quaternion.Euler(90f, 180f, 0f));
+
+
 
                 Instantiate(newGround, new Vector3(0f,0f,60f*levelnumber+120), Quaternion.identity);                
                 transform.Translate(new Vector3(0f,0f,60f));

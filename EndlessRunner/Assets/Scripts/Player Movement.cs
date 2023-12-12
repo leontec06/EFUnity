@@ -41,14 +41,14 @@ public class PlayerMovement : MonoBehaviour
         {
             //transform.Translate(Vector3.left*lanewidth);
             animPlayer.SetTrigger("left");
-            playerRB.AddForce(new Vector3(-10.968f, 0, 0),ForceMode.Impulse);
+            playerRB.AddForce(new Vector3(-10.97f, 0, 0),ForceMode.Impulse);
         }
        
         if (Input.GetKeyDown(KeyCode.RightArrow)&&animPlayer.GetCurrentAnimatorStateInfo(0).IsName("run")&&IsOnGround == true&&transform.position.x<4)
         {
             animPlayer.SetTrigger("right");
             //transform.Translate(Vector3.right*lanewidth);
-            playerRB.AddForce(new Vector3(10.968f, 0, 0),ForceMode.Impulse);
+            playerRB.AddForce(new Vector3(10.97f, 0, 0),ForceMode.Impulse);
         }
 
         if (Input.GetKeyDown(KeyCode.Space)&&IsOnGround&&animPlayer.GetCurrentAnimatorStateInfo(0).IsName("run"))
