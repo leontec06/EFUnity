@@ -18,6 +18,6 @@ public class Score : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        scoreText.text= "Score: "+0;
+        scoreText.text= "Score";
     }
 }
