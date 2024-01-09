@@ -84,10 +84,14 @@ public class PlayerMovement : MonoBehaviour
             walkspeed=0f;
             GameObject.Find("Main Camera").GetComponent<CameraMove>().enabled=false;
             animPlayer.SetTrigger("die");
-            
+            Debug.Log("died");
+        }
             
         if (collision.gameObject.tag=="Coin")
         {
+            Debug.Log("collision");
+            //Destroy(collision.gameObject);
+            collision.gameObject.SetActive(false);
             PlayerScore=+1;
         }
             //WaitNarration();
@@ -102,5 +106,5 @@ public class PlayerMovement : MonoBehaviour
 
     
 
-}
+
 
