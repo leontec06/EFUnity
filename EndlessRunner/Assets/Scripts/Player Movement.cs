@@ -4,6 +4,7 @@ using Unity.VisualScripting;
 using UnityEditor.PackageManager;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     public bool IsOnGround=true;
     //private float lanewidth=5;
     private Rigidbody playerRB;
+    public int PlayerScore=0;
     Animator animPlayer;
 
     
@@ -21,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        PlayerScore=0;
         playerRB=GetComponent<Rigidbody>();
         animPlayer=GetComponent<Animator>();   
         
@@ -83,6 +86,10 @@ public class PlayerMovement : MonoBehaviour
             animPlayer.SetTrigger("die");
             
             
+        if (collision.gameObject.tag=="Coin")
+        {
+            PlayerScore=+1;
+        }
             //WaitNarration();
 
             
