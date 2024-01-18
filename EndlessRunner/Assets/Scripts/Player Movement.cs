@@ -92,7 +92,8 @@ public class PlayerMovement : MonoBehaviour
             Debug.Log("collision");
             //Destroy(collision.gameObject);
             collision.gameObject.SetActive(false);
-            PlayerScore=+1;
+            Scoring.scorecount =+1;
+            //PlayerScore=+1;
         }
             //WaitNarration();
 
