@@ -15,6 +15,8 @@ public class PlayerMovement : MonoBehaviour
     //private float lanewidth=5;
     private Rigidbody playerRB;
     public int PlayerScore=0;
+
+    public static int finalScore;
     Animator animPlayer;
 
     
@@ -96,6 +98,7 @@ public class PlayerMovement : MonoBehaviour
             //Destroy(collision.gameObject);
             collision.gameObject.SetActive(false);
             PlayerScore = PlayerScore+1;
+            finalScore = PlayerScore;
             //PlayerScore=+1;
         }
             //WaitNarration();

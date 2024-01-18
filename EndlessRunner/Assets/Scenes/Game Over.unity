@@ -464,8 +464,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06240e4e53e850240b6efc2dc287558e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 0}
-  score: {fileID: 0}
 --- !u!1 &733579071
 GameObject:
   m_ObjectHideFlags: 0
@@ -1125,7 +1123,7 @@ GameObject:
   - component: {fileID: 1905849714}
   - component: {fileID: 1905849716}
   - component: {fileID: 1905849718}
-  - component: {fileID: 1905849717}
+  - component: {fileID: 1905849719}
   m_Layer: 5
   m_Name: Score
   m_TagString: Untagged
@@ -1160,20 +1158,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1905849713}
   m_CullTransparentMesh: 1
---- !u!114 &1905849717
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1905849713}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee762a980be95d34da856f85ead05243, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlayerScore: {fileID: 0}
-  scoreText: {fileID: 1905849718}
 --- !u!114 &1905849718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1208,6 +1192,19 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 
+--- !u!114 &1905849719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905849713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a93d289008c708a41a3715378bdb884d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Finalscore: {fileID: 1905849718}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
