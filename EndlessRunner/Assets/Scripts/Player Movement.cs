@@ -19,6 +19,8 @@ public class PlayerMovement : MonoBehaviour
 
     
 
+    
+
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +28,7 @@ public class PlayerMovement : MonoBehaviour
         PlayerScore=0;
         playerRB=GetComponent<Rigidbody>();
         animPlayer=GetComponent<Animator>();   
+        
         
     }
 
